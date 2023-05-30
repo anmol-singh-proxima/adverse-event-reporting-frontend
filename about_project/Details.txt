@@ -54,7 +54,7 @@ Increments - Details || Status (Not Started | Started | Completed)
     - To store logged-in user data, Block routes for both logged-in and logged-out users || Completed
 
 # Create a Header Page
-    - Provide easy navigation with following menu items: Home, Create AE Form, View AE Form, Increments, Account, Logout || Completed
+    - Provide easy navigation with following menu items: Home, Create AE Form, View AE Form, Increments, Profile, Logout || Completed
     -  Provide proper CSS Styling || Started
 
 # Create a Home Page
@@ -84,6 +84,12 @@ Increments - Details || Status (Not Started | Started | Completed)
 # Create a ViewForm Page
     - Fetch all the AE Forms data from backend and display it in tabular form || Completed
     - Add buttons to Update and Delete the existing AE Forms || Completed
+    - Provide proper styling to the page || Not Started
+
+#. Create a Profile page
+    - Fetch all the user data from server and display || Not Started
+    - Provide functionality for Updating the User profile || Not Started
+    - Provide functionality for Deleting the User profile || Not Started
     - Provide proper styling to the page || Not Started
 
 
