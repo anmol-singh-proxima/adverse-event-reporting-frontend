@@ -1,0 +1,112 @@
+##. Adverse Event Reporting
+- There is a web page in Vue
+- This web page contains a form which contains 4 kind of information:
+  - General information
+  - Reporter information
+  - Drug/Device information
+  - Event information
+- All the data in the form is going through an api call
+- API is calling the json-server
+- All the data will get hosted on json-server
+
+
+##. Additional Requirements:
+- Signup page for adding new users
+- Login page for authentication of existing users
+- Add captcha for user authentication
+
+
+##. Project Details
+- Project Name: adverse-event-reporting
+- Tools/Libraries Used: npm, vue, json-server, axios
+- Webpage is hosted on http://localhost:8080/
+- Json-server is hosted on http://localhost:3000/
+- Data of json-server is stored in './api/db.json'
+
+
+#. captcha
+- Site Key: 6LcK0h8mAAAAABNwaMy-ldj4YmJw4EnfO9lsJDhr
+- Secret Key: 6LcK0h8mAAAAAGLEC18ygIt7vDIAgtdK5fZ4R_DF
+
+
+
+#. Install vue-recaptcha
+$ npm install vue-recaptcha@next
+
+
+
+
+
+
+
+
+#. Increments in Project:
+Increments - Details || Status (Not Started | Started | Completed)
+
+# Create Login and Signup Pages
+    - Provide form with all the neccessary details || Completed
+    - Add Company Logo on Top || Completed 
+    - Provide proper styling in both the pages || Completed
+    - Provide validations to all the form fields || Not Started
+    - Add captcha for user authentication || Not Started
+
+# Provide Session Storage in app
+    - To store logged-in user data, Block routes for both logged-in and logged-out users || Completed
+
+# Create a Header Page
+    - Provide easy navigation with following menu items: Home, Create AE Form, View AE Form, Increments, Account, Logout || Completed
+    -  Provide proper CSS Styling || Started
+
+# Create a Home Page
+    - Add links/buttons to go to the following pages: Create AE Form Page, View AE Form Page || Completed
+
+# Create an AdverseEventForm (AEForm) Page
+    - Create a form (AE Form) with all the neccessary details || Completed
+    - Divide the form into different sections based on the different types of data to be filled || Completed
+    - Provide Previous and Next button to go back and forth in the form || Completed
+    - Provide Submit/Update button at the end of the form || Completed
+    - Make the mandatory fields as required fields in the AE form || Not Started
+    - Provide validation for the fields in the AE form || Not Started
+    - Divide the page in 2 sections: Left side will contain the section name of the AE Form, and Right side will contain the AE Form. And according to the section of AE Form is displayed on screen, the corresponding section name on the left side will get highlighted. || Started
+
+#. Create a CreateAEForm Page
+    - Include the AEForm Page || Completed
+    - Provide functionality to create a new AE report || Completed
+
+#. Create a UpdateAEForm Page
+    - Include the AE Form Page || Completed
+    - Provide functionality to update the existing AE Reports || Completed
+
+# Create an Increment Page
+    - A separate page with its own route for writing/updating the increments in the project with respective details and status || Completed
+    - Add functionality to add, edit and update the increments in the app || Not Started
+
+# Create a ViewForm Page
+    - Fetch all the AE Forms data from backend and display it in tabular form || Completed
+    - Add buttons to Update and Delete the existing AE Forms || Completed
+    - Provide proper styling to the page || Not Started
+
+
+
+
+
+#. Additional Increments (to be included in Increments list)
+1. Provide Admin functionality in app
+    - Provide Login functionality for Admin
+    - Give admin the access to Increment Page route
+    - Separate the routes for normal and admin users
+    - Admin can view all the Users data
+2. Provide validation to the form fields in entire application
+    - Login Page
+    - Signup Page
+    - Adverse Event Form Page
+3. Provide proper Authorization and Authentication
+    - Add password hash in Signup and Login Page for password protection
+    - Add auth-server for user authorization 
+5. Add a proper backend server in the app
+    - Migrate to nodejs server
+    - Remove json-server
+6. Add database server
+    - Establish connection to mongodb server
+    - Add database schemas
+7. Add APIs to backend to handle requests

@@ -1,0 +1,98 @@
+{
+  "users": [
+    {
+      "name": "Anmol Singh",
+      "email": "anmol@gmail.com",
+      "password": "abc@123",
+      "id": 1
+    },
+    {
+      "name": "vannie dogra",
+      "email": "vannie@gmail.com",
+      "password": "dogra123",
+      "id": 2
+    }
+  ],
+  "default-adverse-event-info": {
+    "generalInfo": {
+      "name": "Anmol Singh",
+      "reportingDate": "05/05/2023",
+      "typeOfEvent": "Adverse Event",
+      "countryOfEvent": "India"
+    },
+    "patientInfo": {
+      "initial": "Balbir Chand",
+      "age": "27",
+      "dob": "20/08/1996",
+      "gender": "Male"
+    },
+    "reporterInfo": {
+      "reporterName": "Aman Anand",
+      "reporterOccupation": "Software Developer",
+      "reporterEmail": "amananand@gmail.com",
+      "reporterPhone": "+91-9878181826",
+      "reporterAddress": "Bela, Gaya, Bihar - 690819",
+      "reporterConsent": "Yes"
+    },
+    "drugInfo": {
+      "suspectDrug": "Benzamin Flame 065 - Daily 1 Tablet",
+      "indication": "Liver Swelling in Diagnosis",
+      "productReturned": "No",
+      "drugStatus": "Frozen",
+      "locationOfDevice": "Bangalore, India",
+      "batchNumber": "098-AM72"
+    },
+    "eventInfo": {
+      "description": "After taking the drug for 20 days continuously as prescribed by the doctor, it caused liver infection to patient which was revealed in scan.",
+      "onsetDate": "10/04/2023",
+      "outcome": "Liver Damage"
+    },
+    "otherInfo": {
+      "otherInformation": "Drug is causing problem related to Liver and Stomach",
+      "reporterConsideration": "Yes"
+    }
+  },
+  "adverse-events": [
+    {
+      "generalInfo": {
+        "name": "Anmol Singh",
+        "reportingDate": "05/05/2023",
+        "typeOfEvent": "Serious Adverse Event",
+        "countryOfEvent": "India"
+      },
+      "patientInfo": {
+        "initial": "Balbir Chand",
+        "age": "22",
+        "dob": "20/08/1996",
+        "gender": "Male"
+      },
+      "reporterInfo": {
+        "reporterName": "Aman Anand",
+        "reporterOccupation": "Software Developer",
+        "reporterEmail": "amananand@gmail.com",
+        "reporterPhone": "+91-9878181826",
+        "reporterAddress": "Bela, Gaya, Bihar - 690819",
+        "reporterConsent": "No"
+      },
+      "drugInfo": {
+        "suspectDrug": "Benzamin Flame 065 - Daily 1 Tablet",
+        "indication": "Liver Swelling in Diagnosis",
+        "productReturned": "No",
+        "drugStatus": "Frozen",
+        "locationOfDevice": "Bangalore, India",
+        "batchNumber": "098-AM72"
+      },
+      "eventInfo": {
+        "description": "After taking the drug for 20 days continuously as prescribed by the doctor, it caused liver infection to patient which was revealed in scan.",
+        "onsetDate": "10/04/2023",
+        "outcome": "Liver Damage"
+      },
+      "otherInfo": {
+        "otherInformation": "Drug is causing problem related to Liver and Stomach",
+        "reporterConsideration": "Yes"
+      },
+      "id": 1
+    }
+  ],
+  "increments": []
+}
