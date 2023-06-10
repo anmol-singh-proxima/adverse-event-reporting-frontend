@@ -1,3 +1,4 @@
+<!--  -->
 <template>
     <div class="login">
         <img src="../assets/lilly_logo.png" alt="Lilly Logo" class="logo" />

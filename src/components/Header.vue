@@ -1,16 +1,16 @@
 <template>
-    <nav class="nav">      
-        <div class="left-nav">
-            <router-link to="/"><a>Home</a></router-link>
-            <router-link to="/report/create"><a>Create AE Form</a></router-link>
-            <router-link to="/report/view"><a>View AE Form</a></router-link>
-            <router-link to="/increments"><a>Increments</a></router-link>
+    <div class="header">      
+        <div class="left-size">
+            <router-link class="menu-item" to="/"><a>Home</a></router-link>
+            <router-link class="menu-item" to="/report/create"><a>Create AE Form</a></router-link>
+            <router-link class="menu-item" to="/report/view"><a>View AE Form</a></router-link>
+            <router-link class="menu-item" to="/increments"><a>Increments</a></router-link>
         </div>
-        <div class="right-nav">
-            <a>Hello {{user.name}}!</a>
-            <a @click="logout">Logout</a>
+        <div class="right-size">
+            <a class="menu-item">Hello {{user.name}}!</a>
+            <a class="menu-item" @click="logout">Logout</a>
         </div>
-    </nav>
+    </div>
 </template>
 
 <script>
@@ -28,28 +28,30 @@ export default {
 </script>
 
 <style>
-.nav {
-    display: block;
-    clear: both;
-    background-color: #111;
-    overflow: hidden;
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color:darkgoldenrod;
     margin: 0;
-    padding: 0px;
+    padding: 0;
+    height: auto;
 }
-.left-nav {
-    float: left;
+.left-size {
+    display: block;
+    width: fit-content;
 }
-.right-nav {
-    float: right;
+.right-size {
+    display: block;
+    width: fit-content;
 }
-.left-nav a, .right-nav a {
-    color: #eee;
-    padding: 8px;
+.header .menu-item {
+    display: inline-block;
+    padding: 8px 10px;
     text-decoration: none;
-    cursor: pointer;
+    color: #eee;
 }
-.left-nav a:hover, .right-nav a:hover {
-    color: #333;
-    background-color: #ddd;
+.header .menu-item:hover {
+    color: #222;
+    background-color: burlywood;
 }
 </style>

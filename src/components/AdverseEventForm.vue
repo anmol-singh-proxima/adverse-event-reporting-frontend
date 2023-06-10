@@ -171,7 +171,7 @@ export default {
     },
     watch: {
         // Check for the changes in 'this.data' value
-        data(newVal, oldVal) {
+        data(newVal) {
             this.formData = newVal
         }
     },

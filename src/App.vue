@@ -27,10 +27,10 @@ body {
 
 /* Login and Signup Page CSS Styling */
 .login, .signup {
-    display: block;
-    margin: auto;
-    width: 350px;
-    padding: 0;
+  display: block;
+  margin: auto;
+  width: 350px;
+  padding: 0;
 }
 .login .logo, .signup .logo {
   width: 150px;

@@ -1,53 +1,53 @@
-import Home from './components/Home'
-import Login from './components/Login'
-import Signup from './components/Signup'
-import CreateForm from './components/adverseEventReport/CreateForm'
-import UpdateForm from './components/adverseEventReport/UpdateForm'
-import ViewForm from './components/ViewForm'
-import Increments from './components/Increments'
-import { createRouter, createWebHistory } from 'vue-router'
+import HomePage from "./views/HomePage.vue";
+import LoginPage from "./views/LoginPage";
+import SignupPage from "./views/SignupPage";
+import CreateReportPage from "./views/CreateReportPage";
+import UpdateReportPage from "./views/UpdateReportPage";
+import ViewReportPage from "./views/ViewReportPage";
+import IncrementsPage from "./views/IncrementsPage";
+import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
-    {
-        name: 'home',
-        component: Home,
-        path: '/'
-    },
-    {
-        name: 'login',
-        component: Login,
-        path: '/login'
-    },
-    {
-        name: 'signup',
-        component: Signup,
-        path: '/signup'
-    },
-    {
-        name: 'createform',
-        component: CreateForm,
-        path: '/report/create'
-    },
-    {
-        name: 'updateform',
-        component: UpdateForm,
-        path: '/report/update/:id'
-    },
-    {
-        name: 'viewform',
-        component: ViewForm,
-        path: '/report/view'
-    },
-    {
-        name: 'increments',
-        component: Increments,
-        path: '/increments'
-    }
-]
+  {
+    name: "home",
+    component: HomePage,
+    path: "/",
+  },
+  {
+    name: "login",
+    component: LoginPage,
+    path: "/login",
+  },
+  {
+    name: "signup",
+    component: SignupPage,
+    path: "/signup",
+  },
+  {
+    name: "create-report",
+    component: CreateReportPage,
+    path: "/report/create",
+  },
+  {
+    name: "update-report",
+    component: UpdateReportPage,
+    path: "/report/update/:id",
+  },
+  {
+    name: "view-report",
+    component: ViewReportPage,
+    path: "/report/view",
+  },
+  {
+    name: "increments",
+    component: IncrementsPage,
+    path: "/increments",
+  },
+];
 
 const router = createRouter({
-    history: createWebHistory(),
-    routes
-})
+  history: createWebHistory(),
+  routes,
+});
 
-export default router
+export default router;

@@ -1,6 +1,5 @@
 <template>
     <div>
-        <Header :user="user" />
         <AdverseEventForm
         :data="formData"
         :submitForm="submitForm"
@@ -11,13 +10,11 @@
 <script>
 /* eslint-disable */
 import axios from 'axios'
-import Header from '../Header.vue'
 import AdverseEventForm from './AdverseEventForm.vue'
 
 export default {
     name: 'CreateForm',
     components: {
-        Header,
         AdverseEventForm,
     },
     data() {
@@ -34,7 +31,7 @@ export default {
             axios.post(url, this.formData).then(response => {
                 if(response.status == 201) {
                     alert("Event submitted successfully!!")
-                    this.$router.push({ name: 'viewform' })
+                    this.$router.push({ name: 'view-report' })
                 }
             }).catch(error => {
                 alert("Event Submission Failed!! See Console Log for more info..")
@@ -43,13 +40,6 @@ export default {
         }
     },
     mounted() {
-        let user = sessionStorage.getItem("user");
-        console.log("user:", user);
-        if(!user) {
-            this.$router.push({ name: 'login' })
-        }
-        user = JSON.parse(user)
-        this.user = user[0]
         axios.get('http://localhost:3000/default-adverse-event-info')
         .then(response => {
             if(response.status === 200) {

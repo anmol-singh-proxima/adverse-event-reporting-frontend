@@ -93,6 +93,11 @@ Increments - Details || Status (Not Started | Started | Completed)
     - Provide proper styling to the page || Not Started
 
 
+#. Create an About Page
+    - Provide About Page link in Header || Not Started
+    - Write the neccessary content for it || Not Started
+    - Add proper styling to the page || Not Started
+
 
 
 

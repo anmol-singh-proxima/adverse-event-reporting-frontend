@@ -1,6 +1,5 @@
 <template>
-    <div>      
-        <Header :user="user" />
+    <div>
         <div class="formData">
             <h1>View Form Data</h1>
             <table class="formDataTable">
@@ -91,13 +90,9 @@
 <script>
 /* eslint-disable */
 import axios from 'axios'
-import Header from './Header.vue'
 
 export default {
     name: 'ViewForm',
-    components: {
-        Header
-    },
     data() {
         return {
             user: {},
@@ -109,29 +104,24 @@ export default {
     },
     methods: {
         loadComponent() {
-            let user = sessionStorage.getItem("user");
-            console.log("user:", user);
-            if(!user) {
-                this.$router.push({ name: 'login' })
-            } else {       
-                user = JSON.parse(user)
-                this.user = user[0]
-                axios.get('http://localhost:3000/adverse-events/')
-                .then(response => {
-                    console.log("Response:", response.data)
-                    this.aeFormData = response.data
-                }).catch(error => {
-                    console.log("Error:", error)
-                })
-            }
+            axios.get('http://localhost:3000/adverse-events/')
+            .then(response => {
+                console.log("Response:", response.data)
+                this.aeFormData = response.data
+            }).catch(error => {
+                alert("Error in fetching data! See Console Log for more info..")
+                console.log("Error:", error)
+            })
         },
         deleteForm(id) {
             axios.delete(`http://localhost:3000/adverse-events/${id}`)
             .then(response => {
                 if(response.status === 200) {
+                    alert("Event Deleted Successfully!!")
                     this.loadComponent()
                 }
             }).catch(error => {
+                alert("Event Deletion Failed!! See Console Log for more info..")
                 console.log("Error:", error)
             })
         }

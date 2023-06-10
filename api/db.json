@@ -5,6 +5,12 @@
       "email": "anmol@gmail.com",
       "password": "abc@123",
       "id": 1
+    },
+    {
+      "name": "Priya Tiwari",
+      "email": "priya@gmail.com",
+      "password": "abc@123",
+      "id": 2
     }
   ],
   "default-adverse-event-info": {
