@@ -1,3 +1,12 @@
+<!--
+#. This is the UpdateReportPage
+#. This page contains 3 sections like HomePage:
+    - header-section - this section contains the HeaderComponent
+    - content-section - this section contains the individual content of the UpdateReportPage
+    - footer-section - this section contains the FooterComponent
+#. It contains UpdateFormComponent to update an existing adverse-event form data
+-->
+
 <template>
     <div class="update-report">    
         <div class="header-section">

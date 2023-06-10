@@ -1,3 +1,8 @@
+<!--
+#. This is the SignupPage for the new users to register in the application with their name, emailId and password
+#. After signing-up successfully, it redirects the user to LoginPage
+-->
+
 <template>
     <div class="signup">
         <img src="../assets/lilly_logo.png" alt="Lilly Logo" class="logo" />

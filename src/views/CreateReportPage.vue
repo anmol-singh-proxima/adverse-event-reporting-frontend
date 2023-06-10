@@ -1,3 +1,12 @@
+<!--
+#. This is the CreateReportPage
+#. This page contains 3 sections like HomePage:
+    - header-section - this section contains the HeaderComponent
+    - content-section - this section contains the individual content of the CreateReportPage
+    - footer-section - this section contains the FooterComponent
+#. It contains CreateFormComponent to register an adverse-event
+-->
+
 <template>
     <div class="create-report">    
         <div class="header-section">

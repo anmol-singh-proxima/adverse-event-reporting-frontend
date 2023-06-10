@@ -1,4 +1,9 @@
-<!--  -->
+<!-- 
+#. This is the LoginPage for the existing users to authenticate themselves with the registered emailId and password
+#. Whenever application opens for the first time, this page loads in the starting
+#. After logging-in succesfully, it redirects the user to the application's HomePage
+ -->
+
 <template>
     <div class="login">
         <img src="../assets/lilly_logo.png" alt="Lilly Logo" class="logo" />

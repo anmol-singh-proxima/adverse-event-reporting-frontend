@@ -1,3 +1,8 @@
+<!--
+#. This is the FooterComponent
+#. This component contains the footer section of the application
+-->
+
 <template>
     <div class="footer">
         <div class="left-side">

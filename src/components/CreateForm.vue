@@ -1,3 +1,8 @@
+<!--
+#. This is the CreateFormComponent
+#. This component contains the AdverseEventFormComponent for registering an adverse-event with the neccessary data
+-->
+
 <template>
     <div>
         <AdverseEventForm

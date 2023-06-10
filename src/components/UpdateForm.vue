@@ -1,3 +1,8 @@
+<!--
+#. This is the UpdateFormComponent
+#. This component contains the AdverseEventFormComponent for updating the existing adverse-event form data
+-->
+
 <template>
     <div>
         <AdverseEventForm

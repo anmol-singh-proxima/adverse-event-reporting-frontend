@@ -1,3 +1,13 @@
+<!--
+#. This is the HomePage of the application
+#. Whenever a user logs into the application, thispage loads first on the screen
+#. This page contains 3 sections:
+    - header-section - this section contains the HeaderComponent
+    - content-section - this section contains the main (or individual) content of the HomePage
+    - footer-section - this section contains the FooterComponent
+#. It contains 2 buttons to redirect the user to the CreateReportPage and ViewReportPage
+-->
+
 <template>
     <div class="home-page">    
         <div class="header-section">

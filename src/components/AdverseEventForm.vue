@@ -1,3 +1,12 @@
+<!--
+#. This is the AdverseEventFormComponent
+#. This component contains an adverse-event-form with the neccessary details
+#. The form is used in 2 different component for 2 different purposes
+    - Creation of new adverse-event
+    - Updation of the exiting adverse-event data
+#. In both the cases, after successfully creating the adverse-event form and after successfully updating the adverse-event form data, it redirects the user to the ViewReportPage
+-->
+
 <template>
     <div class="createFormPage">
         <div class="leftSide">

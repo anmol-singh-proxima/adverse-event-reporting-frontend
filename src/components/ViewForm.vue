@@ -1,3 +1,13 @@
+<!--
+#. This is the ViewFormComponent
+#. This Component contains
+    - All the adverse-events form data fetched from the database through API call
+    - 2 actions to Update and Delete the individual adverse-event form data
+#. To Update the form data, it redirects the user to UpdateReportPage
+#. To Delete the form data, it does API call to the database
+#. After successfully deleting an adverse-event, it re-renders the updated adverse-events form data
+-->
+
 <template>
     <div>
         <div class="formData">

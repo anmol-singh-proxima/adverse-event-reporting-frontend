@@ -1,3 +1,12 @@
+<!--
+#. This is the IncrementsPage of the application
+#. This page contains 3 sections:
+    - header-section - this section contains the HeaderComponent
+    - content-section - this section contains the main individual content of the IncrementsPage
+    - footer-section - this section contains the FooterComponent
+#. This page is under-construction
+-->
+
 <template>
     <div class="increments-page">    
         <div class="header-section">

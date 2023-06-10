@@ -1,5 +1,10 @@
+<!--
+#. This is the HeaderComponent
+#. This component contains a menu for the links to redirect the user to different pages of the application
+-->
+
 <template>
-    <div class="header">      
+    <div class="header">
         <div class="left-size">
             <router-link class="menu-item" to="/"><a>Home</a></router-link>
             <router-link class="menu-item" to="/report/create"><a>Create AE Form</a></router-link>

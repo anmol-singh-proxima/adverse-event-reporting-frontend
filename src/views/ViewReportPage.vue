@@ -1,3 +1,12 @@
+<!--
+#. This is the ViewReportPage
+#. This page contains 3 sections like HomePage:
+    - header-section - this section contains the HeaderComponent
+    - content-section - this section contains the individual content of the ViewReportPage
+    - footer-section - this section contains the FooterComponent
+#. It contains ViewFormComponent to display all the data of the registered adverse-events
+-->
+
 <template>
     <div class="view-report">    
         <div class="header-section">
