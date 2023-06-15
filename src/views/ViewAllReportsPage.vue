@@ -1,10 +1,10 @@
 <!--
-#. This is the ViewReportPage
+#. This is the ViewAllReportsPage
 #. This page contains 3 sections like HomePage:
     - header-section - this section contains the HeaderComponent
-    - content-section - this section contains the individual content of the ViewReportPage
+    - content-section - this section contains the individual content of the ViewAllReportsPage
     - footer-section - this section contains the FooterComponent
-#. It contains ViewFormComponent to display all the data of the registered adverse-events
+#. It contains ViewAllReportsDataComponent to display all the data of the registered adverse-events
 -->
 
 <template>
@@ -13,7 +13,7 @@
             <Header :user="user" />
         </div>
         <div class="content-section">
-            <ViewForm />
+            <ViewAllReportsData :data="allFormData" />
         </div>
         <div class="footer-section">
             <Footer />
@@ -23,23 +23,25 @@
 
 <script>
 /* eslint-disable */
+import axios from 'axios'
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
-import ViewForm from '@/components/ViewForm.vue'
+import ViewAllReportsData from '@/components/ViewAllReportsData.vue'
 
 export default {
-    name: 'Home',
+    name: 'ViewAllReportsPage',
     components: {
         Header,
         Footer,
-        ViewForm,
+        ViewAllReportsData,
     },
     data() {
         return {
             user: {},
+            allFormData: {},
         }
     },
-    mounted() {
+    created() {
         let user = sessionStorage.getItem("user");
         console.log("user:", user);
         if(!user) {
@@ -47,7 +49,20 @@ export default {
         } else {       
             user = JSON.parse(user)
             this.user = user[0]
+            this.loadComponent()
         }
+    },
+    methods: {
+        loadComponent() {
+            axios.get('http://localhost:3000/adverse-events/')
+            .then(response => {
+                console.log("Response:", response.data)
+                this.allFormData = response.data
+            }).catch(error => {
+                alert("Error in fetching data! See Console Log for more info..")
+                console.log("Error:", error)
+            })
+        },
     }
 }
 </script>

@@ -44,7 +44,7 @@ export default {
         console.log("in Parent created()")
         let user = sessionStorage.getItem("user");
         console.log("user:", user);
-        if(!user) {
+        if(user === null) {
             this.$router.push({ name: 'login' })
         } else {       
             user = JSON.parse(user)

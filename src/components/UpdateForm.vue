@@ -44,7 +44,8 @@ export default {
                 if(response.status == 200) {
                     alert("Event Updated successfully!!")
                     this.currentSectionIndex = 0;
-                    this.$router.push({ name: 'view-report' })
+                    const url = `/report/view/${this.formId}`
+                    this.$router.push(url)
                 }
             }).catch(error => {
                 alert("Error in Updating the Event! Check Console Log for more info..")
@@ -52,7 +53,7 @@ export default {
             }) 
         }
     },
-    mounted() {
+    created() {
         console.log("formId in UpdateForm:", this.formId)
         axios.get(`http://localhost:3000/adverse-events/${this.formId}`)
             .then(response => {

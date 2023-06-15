@@ -3,7 +3,8 @@ import LoginPage from "./views/LoginPage";
 import SignupPage from "./views/SignupPage";
 import CreateReportPage from "./views/CreateReportPage";
 import UpdateReportPage from "./views/UpdateReportPage";
-import ViewReportPage from "./views/ViewReportPage";
+import ViewAllReportsPage from "./views/ViewAllReportsPage";
+import ViewSingleReportPage from './views/ViewSingleReportPage'
 import IncrementsPage from "./views/IncrementsPage";
 import { createRouter, createWebHistory } from "vue-router";
 
@@ -35,8 +36,13 @@ const routes = [
   },
   {
     name: "view-report",
-    component: ViewReportPage,
+    component: ViewAllReportsPage,
     path: "/report/view",
+  },
+  {
+    name: "view-single-report",
+    component: ViewSingleReportPage,
+    path: "/report/view/:id",
   },
   {
     name: "increments",
